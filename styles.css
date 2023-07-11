@@ -74,3 +74,43 @@ button:active{
     opacity: 0.5;
     
 }   
+
+@media screen and (max-width: 800px){
+
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo{
+        width: 270px;   
+        margin-top: 65px;
+    }
+
+    h3 {
+        font-size: 22px;
+        width: auto;
+    }
+
+    .left-input, .right-input{
+        width: auto;
+        font-size: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .left-input{
+        margin-bottom: 10px;
+    }
+
+    .raffle {
+        font-size: 25px;
+        width: auto;
+        height: 60px;
+        margin-top: 50px;
+    }
+
+}
