@@ -2,16 +2,20 @@
 const raffleButton = document.querySelector (".raffle");
 
 
-
-
 function generateNumber (){
 
     const min = Math.ceil (document.querySelector(".left-input").value)
     const max = Math.floor (document.querySelector(".right-input").value)
 
-   const result = Math.floor(Math.random() * (max - min + 1)) + min;
+    if (min >= max){
 
-   alert(result)
+    alert("O valor mínimo deve ser MENOR do que o valor máximo")
+    } else {
+
+        const result = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        alert(result)
+    }
 }
 
 /*chama a funçao quando o usuario CLICAR o botao SORTEAR*/
